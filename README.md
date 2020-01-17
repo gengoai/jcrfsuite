@@ -5,7 +5,7 @@ functionality which causes illegal reflective access errors in newer versions of
 ### Maven dependency
 ```xml
 <dependency>
-  <groupId>com.gengoai.vinhkhuc</groupId>
+  <groupId>com.gengoai</groupId>
   <artifactId>jcrfsuite</artifactId>
   <version>0.6.1</version>
 </dependency>
