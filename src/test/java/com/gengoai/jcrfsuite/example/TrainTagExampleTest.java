@@ -19,14 +19,14 @@
 
 package com.gengoai.jcrfsuite.example;
 
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 
 /**
  * Test the example.
@@ -40,7 +40,7 @@ public class TrainTagExampleTest {
 			.resolve("test")
 			.resolve("resources")
 			.resolve("com")
-			.resolve("github")
+			.resolve("gengoai")
 			.resolve("jcrfsuite")
 			.resolve("trainer");
 

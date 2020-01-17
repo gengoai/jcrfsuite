@@ -19,8 +19,12 @@
 
 package com.gengoai.jcrfsuite;
 
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
+import com.gengoai.jcrfsuite.util.Pair;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import third_party.org.chokkan.crfsuite.ItemSequence;
+import third_party.org.chokkan.crfsuite.StringList;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -28,13 +32,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-import com.gengoai.jcrfsuite.util.Pair;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-import third_party.org.chokkan.crfsuite.ItemSequence;
-import third_party.org.chokkan.crfsuite.StringList;
+import static org.hamcrest.Matchers.*;
+import static org.junit.Assert.assertThat;
 
 public class CrfTrainerTest {
 	private static final Path TRAINING_FOLDER = Paths.get(System.getProperty("user.dir"))
@@ -42,7 +41,7 @@ public class CrfTrainerTest {
 			.resolve("test")
 			.resolve("resources")
 			.resolve("com")
-			.resolve("github")
+			.resolve("gengoai")
 			.resolve("jcrfsuite")
 			.resolve("trainer");
 
